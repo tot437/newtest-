@@ -293,7 +293,7 @@ header .container .right .bt1:hover {
 }
 .testimonials .cartes{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);   /* 3 كروت في صف واحد */
+    grid-template-columns: repeat(3, 1fr);   
     gap: 28px;
 }
 .testimonials .cartes .para4,
