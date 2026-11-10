@@ -5,6 +5,9 @@
 }
 
 body {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
     font-family: Arial, sans-serif;
     overflow-x: hidden;
 }
@@ -24,19 +27,25 @@ img {
 
 
 @media (max-width: 1023px) {
-    header .container {
-        flex-direction: column;
-        gap: 15px;
-        padding: 15px 20px;
-    }
-    
-    header .container .left,
-    header .container .middle,
-    header .container .right {
-        width: 100%;
-        justify-content: center;
-        margin: 0;
-    }
+   header .container {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+}
+
+header .container .left,
+header .container .middle,
+header .container .right {
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+}
+
+header .container .middle ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 16px;
+}
 
     .courses .container .cards,
     .courses .container .carts,
@@ -69,11 +78,38 @@ img {
 }
 
 @media (max-width: 767px) {
-    header .container .middle ul {
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-    }
+    header .container .middle, header .container
+     .right .bt1 { header .container .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+}
+
+header .right .bt1,
+header .container .right .bt2 {
+    display: inline-block;
+    white-space: nowrap;
+} } 
+     .header .container { flex-direction: row; }  
+
+.home .left-home .btn-explore,
+.home .left-home .btn-watch { display: block; width: 100%; margin: 0 0 12px; }
+header .container .middle ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px 14px;
+    font-size: 13px;
+}
+
+header .container .right .bt2 {
+    padding: 10px 30px;
+}
+
+footer .footer-col-links { grid-template-columns: repeat(2, 1fr); }
+    
 
     .home {
         flex-direction: column;
