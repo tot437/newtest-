@@ -27,25 +27,25 @@ img {
 
 
 @media (max-width: 1023px) {
-   header .container {
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px 20px;
-}
+    header .container {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 20px;
+    }
 
-header .container .left,
-header .container .middle,
-header .container .right {
-    width: 100%;
-    justify-content: center;
-    margin: 0;
-}
+    header .container .left,
+    header .container .medium,
+    header .container .right {
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
 
-header .container .middle ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px 16px;
-}
+    header .container .medium ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 16px;
+    }
 
     .courses .container .cards,
     .courses .container .carts,
@@ -78,75 +78,379 @@ header .container .middle ul {
 }
 
 @media (max-width: 767px) {
-    header .container .middle, header .container
-     .right .bt1 { header .container .right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin: 0;
-}
 
-header .right .bt1,
-header .container .right .bt2 {
-    display: inline-block;
-    white-space: nowrap;
-} } 
-     .header .container { flex-direction: row; }  
+    html,
+    body {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
 
-.home .left-home .btn-explore,
-.home .left-home .btn-watch { display: block; width: 100%; margin: 0 0 12px; }
-header .container .middle ul {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 6px 14px;
-    font-size: 13px;
-}
+    :is(header, .header) {
+        position: static !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
+        max-height: none !important;
+        overflow: visible !important;
+    }
 
-header .container .right .bt2 {
-    padding: 10px 30px;
-}
+    :is(header, .header) .container {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        gap: 10px !important;
+        padding: 12px 20px !important;
+    }
 
-footer .footer-col-links { grid-template-columns: repeat(2, 1fr); }
-    
+    :is(header, .header) .container> :first-child {
+        display: flex !important;
+        order: 1 !important;
+        width: auto !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        margin: 0 !important;
+    }
+
+    .menu-btn {
+        display: block !important;
+        order: 2 !important;
+    }
+
+    :is(header, .header) .container> :not(.menu-btn):not(:first-child) {
+        display: none !important;
+        order: 3 !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 10px !important;
+        margin: 0 !important;
+    }
+
+    :is(header, .header).open .container> :not(.menu-btn):not(:first-child) {
+        display: flex !important;
+    }
+
+    :is(header, .header) .container ul {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 12px !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 14px;
+    }
+
+    :is(header, .header) .container ul li,
+    :is(header, .header) .container ul li a {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    :is(header, .header) .right .bt1,
+    :is(header, .header) .container .right .bt2 {
+        display: inline-block;
+        white-space: nowrap;
+    }
+
+    :is(header, .header) .container .right .bt2 {
+        padding: 10px 30px;
+    }
 
     .home {
-        flex-direction: column;
-        text-align: center;
-        padding-top: 100px; 
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        text-align: left;
+        padding: 30px 0 50px !important;
+        gap: 30px;
+    }
+
+    .home>* {
+        min-width: 0 !important;
+        max-width: 100% !important;
     }
 
     .home .left-home {
-        width: 100%;
-        padding: 10px;
+        width: 100% !important;
+        padding: 0 20px !important;
+    }
+
+    .home .left-home h1 {
+        font-size: 34px;
+    }
+
+    .home .left-home p {
+        max-width: 100%;
+    }
+
+    .home .left-home .btn-explore,
+    .home .left-home .btn-watch {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 0 12px !important;
     }
 
     .home .left-home .selorry {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 20px;
+        display: flex !important;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 12px;
+        margin-top: 28px;
+    }
+
+    .right-home {
+        width: 100% !important;
+        padding: 0 20px;
     }
 
     .right-home img {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
     }
+
     .courses .container .cards,
     .courses .container .carts,
-    .testimonials .cartes,
-    footer .footer-col-links {
-        grid-template-columns: 1fr;
-        gap: 20px;
+    .testimonials .cartes {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        width: 100% !important;
+    }
+
+    .courses .container .cards>*,
+    .courses .container .carts>*,
+    .testimonials .cartes>* {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .testimonials .cartes {
+        padding: 0 20px;
+    }
+
+    .contact .container {
+        grid-template-columns: 1fr !important;
+        text-align: left;
+        gap: 24px;
+        padding: 32px 24px;
+        border-radius: 20px;
     }
 
     .contact .right {
-        flex-direction: column;
+        flex-direction: column !important;
+        align-items: stretch;
         width: 100%;
+        padding-left: 0;
     }
 
     .contact .right .input,
     .contact .right .btn-subscribe {
         width: 100%;
+    }
+
+    footer {
+        width: 100% !important;
+        overflow: hidden;
+    }
+
+    footer * {
+        max-width: 100%;
+    }
+
+    footer .footer-up {
+        grid-template-columns: 1fr !important;
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    footer .footer-col-links {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 24px 20px;
+    }
+
+    footer p {
+        overflow-wrap: anywhere;
+    }
+
+    h2 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .courses .container .carts>* {
+        padding: 24px !important;
+        border: 1px solid #e8e8f2;
+        border-radius: 16px;
+        background: #fff;
+        box-shadow: none;
+        overflow: visible;
+        text-align: left;
+    }
+
+    .courses .container .carts img {
+        width: 56px !important;
+        height: 56px !important;
+        padding: 16px;
+        margin: 0 0 16px;
+        border-radius: 14px;
+        background: #ececfd;
+        object-fit: contain;
+    }
+
+    .courses .container .cards>* {
+        border-radius: 16px;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 0 8px 24px rgba(30, 27, 75, 0.08);
+    }
+
+    .courses .container .cards>*>img:first-child {
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
+    }
+
+    .testimonials .cartes>* {
+        padding: 24px !important;
+        border: 1px solid #e8e8f2;
+        border-radius: 16px;
+        background: #fff;
+    }
+
+    .contact .right .input,
+    .contact .right .btn-subscribe {
+        height: 48px;
+        border: 0;
+        border-radius: 999px;
+        font-size: 14px;
+    }
+
+    .contact .right .input {
+        padding: 0 22px;
+    }
+}
+
+@media (min-width: 1024px) {
+    header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 78px;
+    }
+
+    header .container .medium ul {
+        display: flex;
+        gap: 32px;
+        list-style: none;
+        font-size: 14px;
+    }
+
+    header .container .right {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+    }
+
+    header .container .right .bt2 {
+        padding: 12px 20px;
+        border-radius: 999px;
+    }
+
+    .home {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1160px;
+        margin: 0 auto;
+        padding: 56px 20px 90px;
+    }
+
+    .home .left-home {
+        width: 52%;
+    }
+
+    .home .left-home h1 {
+        font-size: 54px;
+        line-height: 1.1;
+    }
+
+    .home .left-home .selorry {
+        display: flex;
+        gap: 40px;
+        margin-top: 44px;
+    }
+
+    .right-home img {
+        width: 100%;
+        max-width: 560px;
+        margin-left: auto;
+    }
+
+    .courses .container .cards,
+    .courses .container .carts,
+    .testimonials .cartes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+
+    .contact .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 40px;
+        padding: 56px 48px;
+        border-radius: 24px;
+    }
+
+    .contact .right {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    footer .footer-up {
+        display: grid;
+        grid-template-columns: 1.2fr 2fr;
+        gap: 60px;
+    }
+
+    footer .footer-col-links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+}
+
+/* Mobile menu button */
+.menu-btn {
+    display: none;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .menu-btn {
+        display: block !important;
     }
 }

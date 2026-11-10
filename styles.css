@@ -1,9 +1,12 @@
-header{
+header {
     position: fixed;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
+    margin-bottom: 39px;
     width: 100%;
-    z-index: 1000; 
+    z-index: 1000;
 }
+
 header .container {
     display: flex;
     justify-content: space-between;
@@ -36,23 +39,30 @@ header .container .middle {
     text-align: center;
     width: 30%;
 }
-header  ul {
-    list-style-type: none; margin:0; padding:2px;
-    display: inline-flex; justify-content: center; gap: 20px;
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 2px;
+    display: inline-flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-header a{
-   display: inline-block; color: grey; 
-   text-decoration: none; 
+header a {
+    display: inline-block;
+    color: grey;
+    text-decoration: none;
 }
 
 header .container .right {
     display: flex;
     width: 30%;
-    margin:0;
+    margin: 0;
     justify-content: flex-end;
 }
-header  .right .bt1{
+
+header .right .bt1 {
     position: relative;
     display: inline-block;
     transition: all 0.3s ease;
@@ -62,10 +72,11 @@ header  .right .bt1{
     font-size: 13px;
     font-weight: 200;
     border-radius: 999px;
- color: #000;
- background-color: rgb(184, 180, 180);
+    color: #000;
+    background-color: rgb(184, 180, 180);
 }
-header .container .right .bt2{
+
+header .container .right .bt2 {
     position: relative;
     display: inline-block;
     transition: all 0.3s ease;
@@ -74,27 +85,29 @@ header .container .right .bt2{
     font-size: 11px;
     font-weight: 200;
     border-radius: 999px;
- color: #fff;
- background-color: blue;
+    color: #fff;
+    background-color: blue;
 }
+
 header .container .right .bt1:hover {
     background-color: rgb(247, 243, 243);
     color: blue;
     overflow: hidden;
     cursor: pointer;
-    
+
 }
- header .container .right .bt2:hover{
-    
+
+header .container .right .bt2:hover {
+
     background-color: rgb(27, 27, 29);
     color: white;
     overflow: hidden;
     cursor: pointer;
-    
+
 }
 
-.home{
-   display: flex;
+.home {
+    display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
@@ -102,11 +115,13 @@ header .container .right .bt1:hover {
     padding-top: 90px;
     background-color: rgb(247, 241, 241);
 }
-.home .left-home{
+
+.home .left-home {
     width: 50%;
     padding: 20px;
 }
-.home .left-home .btn-new{
+
+.home .left-home .btn-new {
     position: relative;
     display: inline-block;
     transition: all 0.3s ease;
@@ -114,29 +129,34 @@ header .container .right .bt1:hover {
     padding: 5px 10px;
     font-size: 12px;
     border-radius: 999px;
- color: blue;
- background-color: rgb(184, 180, 180);
- overflow: hidden;
+    color: blue;
+    background-color: rgb(184, 180, 180);
+    overflow: hidden;
 }
-.home .left-home .btn-new:hover{
+
+.home .left-home .btn-new:hover {
     background-color: rgb(247, 243, 243);
     color: blue;
     overflow: hidden;
     cursor: pointer;
-    
+
 }
-.home .left-home .info1{
+
+.home .left-home .info1 {
     font-weight: bold;
     color: blue;
 }
-.home .left-home .info2{
+
+.home .left-home .info2 {
     font-weight: bold;
     color: rgb(0, 0, 0);
 }
-.home .left-home p{
+
+.home .left-home p {
     color: grey;
 }
-.home .left-home .btn-explore{
+
+.home .left-home .btn-explore {
     position: relative;
     display: inline-block;
     transition: all 0.3s ease;
@@ -144,19 +164,21 @@ header .container .right .bt1:hover {
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 999px;
- color: #fff;
- background-color: blue;
- overflow: hidden;
- margin-right: 10px;
+    color: #fff;
+    background-color: blue;
+    overflow: hidden;
+    margin-right: 10px;
 }
-.home .left-home .btn-explore:hover{
+
+.home .left-home .btn-explore:hover {
     background-color: rgb(247, 243, 243);
     color: black;
     overflow: hidden;
     cursor: pointer;
-    
+
 }
-.home .left-home .btn-watch{
+
+.home .left-home .btn-watch {
     position: relative;
     display: inline-block;
     transition: all 0.3s ease;
@@ -164,16 +186,18 @@ header .container .right .bt1:hover {
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 999px;
- color: blue;
- background-color: #fff;
- overflow: hidden;
+    color: blue;
+    background-color: #fff;
+    overflow: hidden;
 }
-.home .left-home .btn-watch:hover{
+
+.home .left-home .btn-watch:hover {
     background-color: grey;
     color: white;
     overflow: hidden;
-    cursor: pointer; 
+    cursor: pointer;
 }
+
 .home .left-home .selorry {
     display: flex;
     justify-content: flex-start;
@@ -181,24 +205,29 @@ header .container .right .bt1:hover {
     width: 100%;
     gap: 30px;
 }
-.home .left-home .selorry .text1 .h2{
+
+.home .left-home .selorry .text1 .h2 {
     font-weight: 700;
     font-size: 50px;
     color: rgb(0, 0, 0);
 }
-.home .left-home .selorry .text2 .h2{
+
+.home .left-home .selorry .text2 .h2 {
     font-weight: 700;
     font-size: 50px;
     color: rgb(0, 0, 0);
 }
-.home .left-home .selorry .text3 .h2{
+
+.home .left-home .selorry .text3 .h2 {
     font-weight: 700;
     font-size: 50px;
     color: rgb(0, 0, 0);
 }
-.home .left-home .selorry .p{
+
+.home .left-home .selorry .p {
     color: grey;
 }
+
 .courses {
     width: 100%;
     padding: 96px 0;
@@ -210,42 +239,48 @@ header .container .right .bt1:hover {
     margin: 0 auto;
     padding: 0 24px;
 }
-.courses .container .up{
+
+.courses .container .up {
     display: block;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin-bottom: 40px;
 }
-.courses .container .up .para1{
+
+.courses .container .up .para1 {
     color: #4f46e5;
     font-weight: 20;
     font-size: 10px;
     margin-bottom: 16px;
 }
-.courses .container .up .para2{
+
+.courses .container .up .para2 {
     color: #000;
     font-weight: 700;
     font-size: 32px;
     margin-bottom: 16px;
 }
-.courses .container .up .para3{
+
+.courses .container .up .para3 {
     color: gray;
     font-weight: 100;
     font-size: 15px;
 }
-.courses .container .up .carts{
-     display: grid;
-    grid-template-columns: repeat(3, 1fr);   
+
+.courses .container .up .carts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 28px;
 }
 
 .courses .container .cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);   
+    grid-template-columns: repeat(3, 1fr);
     gap: 28px;
 }
-.courses  h2{
+
+.courses h2 {
     font-weight: 700;
     text-align: left;
     font-size: 30px;
@@ -272,7 +307,7 @@ header .container .right .bt1:hover {
     padding: 0 20px;
 }
 
-.testimonials{
+.testimonials {
     width: 100%;
     padding: 96px 24px;
     background-color: #F8FAFF;
@@ -280,47 +315,57 @@ header .container .right .bt1:hover {
     margin: 0 auto;
     padding: 0 24px;
 }
-.testimonials p{
+
+.testimonials p {
     text-align: center;
     color: #4f46e5;
     font-size: 18px;
 }
-.testimonials h3{
+
+.testimonials h3 {
     text-align: center;
     color: black;
     font-size: 50px;
     font-weight: 700;
 }
-.testimonials .cartes{
+
+.testimonials .cartes {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);   
+    grid-template-columns: repeat(3, 1fr);
     gap: 28px;
 }
+
 .testimonials .cartes .para4,
 .testimonials .cartes .para5,
-.testimonials .cartes .para6{
+.testimonials .cartes .para6 {
     font-weight: 300;
     text-align: left;
     color: grey;
     font-size: 18px;
 }
+
 .testimonials .acount-student {
     display: flex;
-    align-items: center; 
+    align-items: center;
     gap: 12px;
 }
+
 .testimonials .acount-student img {
     margin-bottom: 0;
 }
-.testimonials .acount-student p{
+
+.testimonials .acount-student p {
+    margin-top: 30px;
+    margin-left: -99px;
     color: gray;
     display: flex;
-    align-items: center; 
+    align-items: center;
     gap: 12px;
 }
+
 .contact {
     width: 100%;
-    padding: 56px 48px; 
+    padding: 56px 48px;
     margin-bottom: 40px;
     border-radius: 10px;
     background-color: #4f46e5;
@@ -329,50 +374,55 @@ header .container .right .bt1:hover {
     margin: 10px auto;
     padding: 50px 24px;
 }
+
 .contact .container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);  
+    grid-template-columns: repeat(2, 1fr);
     gap: 28px;
-    
+
 }
-.contact .left{
+
+.contact .left {
     width: 100%;
     height: auto;
 }
-.contact .left .pig{
+
+.contact .left .pig {
     font-weight: 700;
     text-align: left;
     font-size: 30px;
     margin-bottom: 10px;
 }
-.contact .left .smal{
+
+.contact .left .smal {
     font-weight: 50;
     text-align: left;
     color: #F8FAFF;
     font-size: 20px;
 }
+
 .contact .right {
-    width: 100%; 
+    width: 100%;
     padding-top: 10px;
     padding-left: 20px;
     height: auto;
     text-align: center;
-    display: flex; 
+    display: flex;
     align-items: center;
-    gap: 10px; 
+    gap: 10px;
 }
 
 .contact .right .input {
-    width: 40%; 
+    width: 40%;
     padding: 10px 20px;
-    margin: 0; 
+    margin: 0;
     border: none;
     border-radius: 20px;
 }
 
 .contact .right .btn-subscribe {
     display: inline-block;
-    width: auto; 
+    width: auto;
     position: relative;
     transition: all 0.3s ease;
     border: none;
@@ -384,15 +434,17 @@ header .container .right .bt1:hover {
     background-color: rgb(222, 255, 76);
     cursor: pointer;
 }
-.contact .right .btn-subscribe:hover{
+
+.contact .right .btn-subscribe:hover {
     background-color: #f59e0b;
     color: white;
     cursor: pointer;
 }
+
 footer {
     margin-top: 10px;
     width: 100%;
-    background-color: #1e1b4b; 
+    background-color: #1e1b4b;
     color: #000;
     padding: 64px 0 24px 0;
 }
@@ -410,7 +462,7 @@ footer .footer-up {
     grid-template-columns: 1.5fr 3fr;
     align-items: start;
     padding-bottom: 40px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 
@@ -458,7 +510,7 @@ footer .footer-col-left .social-icons img:hover {
 
 footer .footer-col-links {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }
 
@@ -472,7 +524,7 @@ footer .footer-col-links .pig {
 footer .footer-col-links .small {
     color: #94A3B8;
     font-size: 14px;
-    line-height: 2; 
+    line-height: 2;
     margin: 0;
 }
 
