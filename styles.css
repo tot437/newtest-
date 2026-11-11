@@ -40,6 +40,41 @@ header .container .middle {
     width: 30%;
 }
 
+nav {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+
+}
+
+nav ul li:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+header .right a {
+    display: block;
+    display: none;
+    text-align: center;
+    color: gray;
+    text-decoration: none;
+    background-color: rgb(67, 67, 212);
+    padding: 15px;
+    border-radius: 999px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
 header ul {
     list-style-type: none;
     margin: 0;
@@ -274,7 +309,7 @@ header .container .right .bt2:hover {
     gap: 28px;
 }
 
-.courses .container .cards {
+.courses .container .carts {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 28px;
@@ -287,7 +322,7 @@ header .container .right .bt2:hover {
     margin-bottom: 10px;
 }
 
-.courses .container .card {
+.courses .container .cart {
     /* حذفت width: 30% */
     background: #FFFFFF;
     border: 1px solid #E2E8F0;
@@ -296,14 +331,16 @@ header .container .right .bt2:hover {
     box-shadow: 0 10px 30px rgba(30, 27, 75, 0.08);
 }
 
-.courses .container .card img {
-    width: 100%;
+.courses .container .cart img {
+    text-align: center;
+    align-items: center;
+    margin: 10px auto 0;
     height: auto;
     display: block;
 }
 
-.courses .container .card h3,
-.courses .container .card p {
+.courses .container .cart h3,
+.courses .container .cart p {
     padding: 0 20px;
 }
 
@@ -355,8 +392,8 @@ header .container .right .bt2:hover {
 }
 
 .testimonials .acount-student p {
-    margin-top: 30px;
-    margin-left: -99px;
+    margin-top: 70px;
+    margin-left: -111px;
     color: gray;
     display: flex;
     align-items: center;
